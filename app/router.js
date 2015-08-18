@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('teams', function() {
-    this.route('show', {path: ':id'})
+    this.route('show', { path: ':id' })
   });
 });
 
