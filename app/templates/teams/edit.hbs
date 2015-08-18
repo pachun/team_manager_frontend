@@ -1,0 +1,16 @@
+{{#link-to 'teams'}}back to teams{{/link-to}}
+
+<h3>Edit the {{model.city}} {{model.name}}</h3>
+<form {{action "updateTeam" on="submit"}}>
+  <div>
+    <label for="name">team name</label>
+    {{input value=model.name id='name'}}
+  </div>
+  <div>
+    <label for="city">team city</label>
+    {{input value=model.city id='city'}}
+  </div>
+  <button type="submit">Save</button>
+</form>
+
+{{outlet}}
