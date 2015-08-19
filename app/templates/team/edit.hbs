@@ -1,5 +1,3 @@
-{{#link-to 'teams'}}back to teams{{/link-to}}
-
 <h3>Edit the {{model.city}} {{model.name}}</h3>
 <form {{action "updateTeam" on="submit"}}>
   <div>
@@ -13,4 +11,5 @@
   <button type="submit">Save</button>
 </form>
 
-{{outlet}}
+{{#link-to 'teams'}}cancel{{/link-to}}
+

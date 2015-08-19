@@ -1,0 +1,15 @@
+<h3>Create New Team</h3>
+<form {{action "createTeam" on="submit"}}>
+  <div>
+    <label for="name">team name</label>
+    {{input type='text' valueBinding="name"}}
+  </div>
+  <div>
+    <label for="city">team city</label>
+    {{input type='text' valueBinding="city"}}
+  </div>
+  <button type="submit">Save</button>
+</form>
+
+{{#link-to 'teams'}}cancel{{/link-to}}
+
